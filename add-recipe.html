@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flavorful Journeys</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #F5F5F5; 
+        }
+        nav {
+            background-color: #6A1B9A;
+            padding: 10px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: white; 
+            text-decoration: none;
+        }
+        h1 {
+            color: #6A1B9A; 
+        }
+        form {
+            background-color: white; 
+            padding: 20px;
+            border-radius: 5px; 
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            margin-top: 20px; 
+        }
+        label {
+            font-weight: bold;
+            color: #6A1B9A;
+            margin-bottom: 5px;
+            display: block;
+        }
+        input[type="text"],
+        input[type="url"],
+        select,
+        textarea {
+            width: 90%; 
+            max-width: 600px; 
+            padding: 10px;
+            border: 1px solid #6A1B9A;
+            border-radius: 5px;
+            margin-bottom: 20px; 
+            font-size: 16px;
+        }
+        textarea {
+            resize: vertical; 
+        }
+        button {
+            background-color: #6A1B9A;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+            width: 150px; 
+            margin-top: 20px; 
+            display: block; 
+            align-self: flex-end; 
+        }
+        button:hover {
+            background-color: #A06AB2; 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="add-recipe.html">Add Recipe</a></li>
+                <li><a href="recipe-list.html">Recipe List</a></li>
+            </ul>
+        </nav>
+        <h1>Add Your Recipe</h1>
+    </header>
+
+    <main>
+        <form action="#" method="post">
+            <label for="recipe-name">Recipe Name</label>
+            <input type="text" id="recipe-name" name="recipe-name" placeholder="Write recipe name here" required>
+            
+            <label for="ingredients">Ingredients</label>
+            <textarea id="ingredients" name="ingredients" placeholder="Write your ingredients here" required></textarea>
+            
+            <label for="instructions">Cooking Instructions</label>
+            <textarea id="instructions" name="instructions" placeholder="Write your cooking instructions here" required></textarea>
+            
+            <label for="image-url">Image URL</label>
+            <input type="url" id="image-url" name="image-url" placeholder="Enter image URL">
+            
+            <label for="category">Recipe Category</label>
+            <select id="category" name="category" required>
+                <option value="afghani foods">Afghani Foods</option>
+                <option value="desserts">Desserts</option>
+                <option value="drinks">Drinks</option>
+            </select>
+            
+            <button type="submit">Save Recipe</button>
+        </form>
+    </main>
+
+    <footer style="text-align: center; margin-top: 20px; padding: 10px; background-color: #EDE7F6; color: #6A1B9A; border-radius: 5px;">
+        <p>Created by Nazifa Ramaki &copy; 2025</p>
+    </footer>
+</body>
+</html>
