@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flavorful Journeys</title>
+    <style>
+        body {
+            background-color: #F5F5F5; 
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #6A1B9A; 
+            padding: 10px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: white; 
+            text-decoration: none;
+            padding: 8px 16px;
+            display: block;
+        }
+        nav ul li a:hover {
+            background-color: #4A148C; 
+        }
+
+        h1 {
+            color: #3E2723; 
+            margin-top: 20px;
+        }
+        ul.category-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        ul.category-list li {
+            background-color: #EDE7F6; 
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px; 
+            transition: background-color 0.3s;
+        }
+        ul.category-list li a {
+            color: #6A1B9A; 
+            text-decoration: none;
+        }
+        ul.category-list li:hover {
+            background-color: #D1C4E9; 
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="add-recipe.html">Add Recipe</a></li>
+                <li><a href="recipe-list.html">Recipe List</a></li>
+            </ul>
+        </nav>
+        <h1>Welcome to Flavorful Journeys!</h1>
+    </header>
+
+    <main>
+        <p>Flavorful Journeys is your go-to destination for discovering and sharing inspiring recipes from around the globe.</p>
+        
+        <article>
+            <h2>Bolani</h2>
+            <p><strong>Bolani</strong> is a delicious Afghan stuffed flatbread.</p>
+            <img src="images/boolani.jpg" alt="Bolani image" width="400" height="300"> <br> <br>
+            <a href="recipe-details.html#boolani">Full Recipe</a>
+        </article>
+        
+        <section>
+            <h2>Featured Categories</h2>
+            <ul class="category-list">
+                <li><a href="recipe-list.html#afghani">Afghani Traditional Foods</a></li>
+                <li><a href="recipe-list.html#desserts">Desserts</a></li>
+                <li><a href="recipe-list.html#drinks">Drinks</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer style="text-align: center; margin-top: 20px; padding: 10px; background-color: #EDE7F6; color: #6A1B9A; border-radius: 5px;">
+        <p>Created by Nazifa Ramaki &copy; 2025</p>
+    </footer>
+</body>
+</html>
