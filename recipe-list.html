@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flavorful Journeys</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: #F5F5F5; 
+        }
+        nav {
+            background-color: #6A1B9A;
+            padding: 10px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+        nav ul li {
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: white; 
+            text-decoration: none;
+        }
+        .food-item {
+            display: flex;
+            align-items: center;
+            background-color: white; 
+            padding: 10px;
+            margin-bottom: 20px;
+            border-radius: 5px; 
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+        }
+        .food-item img {
+            margin-right: 20px;
+            border-radius: 5px;
+        }
+        h2 {
+            color: #A06AB2; 
+        }
+        select {
+            padding: 10px;
+            border: 1px solid #6A1B9A;
+            border-radius: 5px;
+            background-color: white;
+            color: #333;
+            font-size: 16px;
+            margin-bottom: 20px;
+            cursor: pointer;
+        }
+        select:hover {
+            border-color: #A06AB2;
+        }
+        label {
+            font-weight: bold;
+            color: #6A1B9A;
+            margin-bottom: 5px;
+            display: block;
+        }
+        form {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="add-recipe.html">Add Recipe</a></li>
+                <li><a href="recipe-list.html">Recipe List</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form>
+            <label for="food">Featured by Category</label>
+            <select id="food" name="food">
+                <option value="afghanitraditionalfood">Afghani Traditional Foods</option>
+                <option value="desserts">Desserts</option>
+                <option value="drinks">Drinks</option>
+            </select>
+        </form>
+        
+        <h1>Recipe Lists</h1>
+        
+        <section id="afghani">
+            <h2>Afghani Traditional Foods</h2>
+            <hr>
+            <div class="food-item">
+                <img src="images/boolani.jpg" alt="Bolani image" width="200" height="200">
+                <div>
+                    <h3>Bolani</h3>
+                    <p>Afghani Boolani is a delicious Afghan stuffed flatbread, typically made with a thin layer of dough filled with a savory mixture of potatoes, herbs, and spices.</p>
+                    <a href="recipe-details.html#boolani">Full Recipe</a>
+                </div>
+            </div>
+            <div class="food-item">
+                <img src="images/manto.jpg" alt="Manto image" width="200" height="200">
+                <div>
+                    <h3>Manto</h3>
+                    <p>Afghani Manto is a traditional Afghan dumpling filled with a savory mixture of ground meat, onions, and spices.</p>
+                    <a href="recipe-details.html#manto">Full Recipe</a>
+                </div>
+            </div>
+            <div class="food-item">
+                <img src="images/kabuli-Pulao.jpg" alt="Kabuli Palo image" width="200" height="200">
+                <div>
+                    <h3>Qabli Palo</h3>
+                    <p>Afghani Qabli Palo is a fragrant and flavorful rice dish, often considered a national specialty of Afghanistan.</p>
+                    <a href="recipe-details.html#qabli">Full Recipe</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="desserts">
+            <h2>Desserts</h2>
+            <hr>
+            <div class="food-item">
+                <img src="images/cake.jpg" alt="Cake image" width="200" height="200">
+                <div>
+                    <h3>Chocolate Cake</h3>
+                    <p>Chocolate Cake is a rich and decadent dessert made primarily with cocoa powder or melted chocolate.</p>
+                    <a href="recipe-details.html#cake">Full Recipe</a>
+                </div>
+            </div>
+            <div class="food-item">
+                <img src="images/apple pie.jpg" alt="Apple Pie image" width="200" height="200">
+                <div>
+                    <h3>Apple Pie</h3>
+                    <p>Apple Pie is a classic dessert made with a flaky pastry crust filled with sweet, spiced apples.</p>
+                    <a href="recipe-details.html#pie">Full Recipe</a>
+                </div>
+            </div>
+            <div class="food-item">
+                <img src="images/raisin.jpg" alt="Raisin Cookie image" width="200" height="200">
+                <div>
+                    <h3>Raisin Cookie</h3>
+                    <p>Raisin Cookies are soft and chewy treats made with a dough that typically includes flour, butter, sugar, and oats, mixed with plump raisins.</p>
+                    <a href="recipe-details.html#cooki">Full Recipe</a>
+                </div>
+            </div>
+        </section>
+
+        <section id="drinks">
+            <h2>Drinks</h2>
+            <hr>
+            <div class="food-item">
+                <img src="images/doogh.jpg" alt="Doogh image" width="200" height="200">
+                <div>
+                    <h3>Afghani Doogh</h3>
+                    <p>Afghani Doogh is a traditional yogurt-based drink popular in Afghanistan.</p>
+                    <a href="recipe-details.html#doogh">Full Recipe</a>
+                </div>
+            </div>
+            <div class="food-item">
+                <img src="images/orange.jpg" alt="Orange image" width="200" height="200">
+                <div>
+                    <h3>Orange Juice</h3>
+                    <p>Our Orange juice is known for its vibrant color and refreshing taste.</p>
+                    <a href="recipe-details.html#orange">Full Recipe</a>
+                </div>
+            </div>
+            <div class="food-item">
+                <img src="images/capacino.jpg" alt="Cappuccino image" width="200" height="200">
+                <div>
+                    <h3>Cappuccino</h3>
+                    <p>Indulge in the rich, velvety experience of our Cappuccino!</p>
+                    <a href="recipe-details.html#cappuccino">Full Recipe</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer style="text-align: center; margin-top: 20px; padding: 10px; background-color: #EDE7F6; color: #6A1B9A; border-radius: 5px;">
+        <p>Created by Nazifa Ramaki &copy; 2025</p>
+    </footer>
+</body>
+</html>
